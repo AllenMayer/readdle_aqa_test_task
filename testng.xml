@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Add To Cart Suite">
+    <test verbose="2" preserve-order="true" name="Add To Cart Test">
+        <parameter name="productName" value="MD506Z/A"/>
+        <classes>
+            <class name="CartTest">
+                <methods>
+                    <include name="verifyUserCanAddProductToCart"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
